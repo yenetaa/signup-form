@@ -1,0 +1,131 @@
+@import './reset.css';
+@import url('https://fonts.cdnfonts.com/css/wotfard');
+
+@font-face {
+  font-family: 'Norse';
+  src: url('/fonts/Norse-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: 'Wotfard', sans-serif;
+}
+
+a {
+  color: white;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+.auth-container {
+  margin-left: auto;
+  margin-right: auto;
+
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  min-height: 100vh;
+}
+
+.auth-brand {
+  background-image: url(/images/forest.avif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.odin-logo {
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-top: 30%;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: 'Norse', sans-serif;
+  font-size: 6rem;
+  width: 100%;
+}
+
+.form-text {
+  font-size: 1.5rem;
+  margin: 110px 80px 50px 80px;
+}
+
+.max-width-700 {
+  width: 700px;
+  margin-bottom: 1.5rem;
+}
+
+.form-container {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 40px 80px 55px 80px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem 5rem;
+  width: 600px;
+  margin-top: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+.form-group input {
+  outline: none;
+  border: none;
+  border: solid 1px #E5E7EB;
+  border-radius: 3px;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid #2F5D03;
+  box-shadow: 0 0 4px rgba(47, 93, 3, 0.5);
+}
+
+.button-wrapper {
+  padding: 40px 0px 0px 80px;
+}
+
+.submit-btn {
+  padding: 10px 40px 10px 40px;
+  border-radius: 8px;
+  border: none;
+  background-color: #2F5D03;
+  color: white;
+  cursor: pointer;
+}
+
+.margin-top-10 {
+  margin-top: 10px;
+}
+
+.log-in-link {
+  color: #2F5D03;
+  text-decoration: none;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px white inset !important;
+  -webkit-text-fill-color: inherit !important;
+}

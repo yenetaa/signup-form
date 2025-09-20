@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <section class="auth-section">
+    <div class="auth-container">
+      <div class="auth-brand">
+        <div class="odin-logo">
+          <img src="/images/odin-lined.png" alt="Odin Logo" width="100px">
+          <p>Odin</p>
+        </div>
+
+        <p class="image-credits">Photo by <a href="https://unsplash.com/@haliewestphoto" target="_blank"
+            rel="noopener noreferrer">Halie West</a> on <a
+            href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA" target="_blank"
+            rel="noopener noreferrer">Unsplash</a></p>
+      </div>
+
+      <div class="auth-form">
+        <div class="form-text">
+          <p class="max-width-700">This is not a real online service! You know you need something like this in your life
+            to help you realize
+            your deepest dreams. Sign up <strong>now</strong> to get started.</p>
+          <p>You <strong>know</strong> you want to.</p>
+        </div>
+
+        <div class="form-container">
+          <h2>Let's do this</h2>
+          <form id="signup-form" action="/submit" method="POST">
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="first-name">First Name*</label>
+                <input type="text" id="first-name" name="first-name" required>
+              </div>
+
+              <div class="form-group">
+                <label for="last-name">Last Name*</label>
+                <input type="text" id="last-name" name="last-name" required>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email*</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+
+              <div class="form-group">
+                <label for="phone-no">Phone Number*</label>
+                <input type="tel" id="phone-no" name="phone-no" required>
+              </div>
+
+              <div class="form-group">
+                <label for="password">Password*</label>
+                <input type="password" id="password" name="password" required
+                  pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"
+                  title="Password must be at least 8 characters, and include at least one uppercase letter, one lowercase letter, one number, and one special character (@$!%*?&).">
+              </div>
+
+              <div class="form-group">
+                <label for="confirm-pass">Confirm Password*</label>
+                <input type="password" id="confirm-pass" name="confirm-pass" required>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="button-wrapper">
+          <button class="submit-btn" type="submit" form="signup-form">Create Account</button>
+          <p class="margin-top-10">Already have an account? <a class="log-in-link" href="">Log in</a></p>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
